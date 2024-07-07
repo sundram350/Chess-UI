@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("./chess.jfif");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+}
+nav {
+  margin: 0.1px 4% 0% 4%;
+  width: 92%;
+  height: 50px;
+  background-color: rgb(133, 161, 161);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.nav-logo {
+  /* border: 2px solid red; */
+  margin-right: 30%;
+  display: flex;
+  font-size: 20px;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 20%;
+  padding-right: 50px;
+  height: 100%;
+  color: white;
+}
+.nav-menu {
+  font-size: 20px;
+  color: white;
+  width: 40%;
+  height: 100%;
+  /* border: 2px solid red; */
+  display: flex;
+
+  justify-content: space-evenly;
+  /* gap: 10px; */
+  align-items: center;
+}
+.nav-i {
+  /* border: 2px solid red; */
+  color: white;
+  font-size: 20px;
+  font-weight: 900;
+  width: 10%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.nav-i .menu {
+  display: none;
+}
+/* .nav-i .user {
+  border: 2px solid red;
+  border-radius: 50%;
+} */
+#content {
+  /* border: 2px solid red; */
+  height: calc(100% - 50px);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#left {
+  color: white;
+  background-color: transparent;
+  /* background-color: khaki; */
+  width: 40%;
+  height: 100%;
+  font-family: sans-serif;
+  padding-right: 30px;
+  padding-top: 100px;
+  /* border: 12px solid chocolate; */
+  padding-left: 50px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+#right {
+  /* position: relative; */
+  overflow: auto;
+  width: 59%;
+  height: 100%;
+}
+#right::-webkit-scrollbar {
+  display: none;
+}
+#left h6 {
+  line-height: 30px;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+#left h1 {
+  line-height: 70px;
+  font-size: 70px;
+  font-weight: 900;
+}
+#left p {
+  font-size: 15px;
+  margin-top: 20px;
+}
+#left .gola {
+  font-size: 10px;
+  display: flex;
+  width: 50%;
+  justify-content: center;
+}
+#left button .cursor {
+  color: rgb(255, 0, 51);
+}
+#left button {
+  padding: 10px;
+  width: 50%;
+  position: absolute;
+  top: 75%;
+  border: none;
+  left: 25%;
+  border-radius: 30px;
+  margin-top: 20px;
+  font-weight: 900;
+  background-color: rgb(146, 97, 97);
+  margin-right: 50;
+}
+#left .club {
+  padding-left: 50px;
+}
+
+#slider {
+  width: 100vw;
+  height: 60%;
+  /* overflow: auto; */
+  position: absolute;
+  position: relative;
+  top: 10%;
+  display: flex;
+  gap: 10px;
+}
+#slider img {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+}
+
+#arrow {
+  /* width: 100px;
+  height: 100px; */
+
+  position: absolute;
+  bottom: 15%;
+  left: 70%;
+  gap: 10px;
+
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+.left {
+  color: white;
+  font-size: 45px;
+  /* width: 100px;
+  height: 100px; */
+  /* border: 2px solid red; */
+  /* border-radius: 50%; */
+  font-weight: 900;
+}
+.right {
+  color: white;
+  font-size: 45px;
+  font-weight: 900;
+  /* width: 100px;
+  height: 100px; */
+  /* border: 2px solid red; */
+}
+#arrow button {
+  border-radius: 50%;
+
+  width: 60px;
+  height: 60px;
+  /* background-color: transparent; */
+  border: none;
+  background-color: rgb(82, 69, 55);
+}
